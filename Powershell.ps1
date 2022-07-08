@@ -12,7 +12,6 @@ Function Deploy-Files-s3bucket {
         try {
 		
 	        #uploads  All Python Files into s3bucket
-			aws s3 cp ./$Files s3://$S3Bucket/	
 			
 			#Uploads only the modified files into s3 bucket
 			aws s3 cp ./$i s3://$S3Bucket/	
